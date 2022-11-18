@@ -93,13 +93,13 @@ sealed class HttpResult<out T>(open val code: Int,open val msg:String) : Seriali
     }
 
     enum class ResultErrorCode(val code:Int,val msg: String = ""){
-        NO_CONNECTION(3000,"网络异常"),
-        CONNECTION_TIMEOUT(3001,"连接超时"),
+        NO_CONNECTION(3000,"网络连接异常"),
+        CONNECTION_TIMEOUT(3001,"网络连接超时"),
         UNKNOWN(3002,"未知异常"),
         CONNECTION_REFUSED(3003,"服务器连接异常"),
         NETWORK_ERROR(3004,"服务器网络异常"),
         JSON_PARSE_ERROR(3005,"数据解析异常"),
-        PERMISSION_DENIED(3006,"需要网络授权"),
+        PERMISSION_DENIED(3006,"客户端需要网络授权"),
         HAND_SHAKE_ERROR(3007,"服务器证书异常"),
         API_ERROR(3008)
     }

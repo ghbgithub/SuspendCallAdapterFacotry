@@ -7,7 +7,7 @@ android {
     compileSdk 29
     defaultConfig {
         applicationId "com.hongbo.retrofit.calladapterfacotry"
-        minSdk 21
+        minSdk 14
         targetSdk 31
         versionCode 1
         versionName "1.0"

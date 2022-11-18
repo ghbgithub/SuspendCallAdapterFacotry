@@ -19,9 +19,11 @@ class MainActivity : AppCompatActivity() {
                 when(val res = ApiClient.api.articleList()){
                     is HttpResult.Success -> {
                         val result = res.value
+                        binding.text.text = result.data.datas.toString()
                     }
                     else ->{
                         val msg = res.msg
+                        binding.text.text = msg
                     }
                 }
             }
