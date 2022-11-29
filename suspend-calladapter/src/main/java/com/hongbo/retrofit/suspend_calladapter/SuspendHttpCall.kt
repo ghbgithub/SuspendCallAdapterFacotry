@@ -78,7 +78,6 @@ internal class SuspendHttpCall<T>(
 
     override fun request(): Request = delegate.request()
 
-    override fun timeout(): Timeout = delegate.timeout()
 
     /**
      * 生成一个接口请求失败，或者中间过程(解析数据)异常的情况的返回体
