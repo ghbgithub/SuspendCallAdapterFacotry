@@ -15,7 +15,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.hongbo.retrofit.calladapter'
                 artifactId = 'suspend-calladapter'
-                version = '0.0.8.1'
+                version = '0.0.8.2'
             }
         }
     }
@@ -35,7 +35,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
